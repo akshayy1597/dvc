@@ -25,7 +25,7 @@ pip3 list
 
 6. To install packages: 
 ```
-pip3 install -r requirements_dvc.txt
+pip3 install -r requirements.txt
 ```
 
 7. Initializing git: 
