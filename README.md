@@ -82,6 +82,43 @@ dvc repro
 Dvc dag
 ```
 
+13. pushing everything to github:
+```
+git add data.dvc && git commit -m "add data file"
+```
+
+14. To add the remote location and where we're using (/tmp/dvcstore) this folder as our central repo
+```
+mkdir tmp
+```
+
+```
+cd tmp
+```
+
+15. to check the path of the folder 
+```
+pwd
+```
+
+```
+mkdir dvcstore
+```
+
+```
+dvc remote add -d myremote /tmp/dvcstore
+```
+
+16. pushing the changes:
+```
+dvc push
+```
+
+17. to retrive the changes:
+```
+dvc pull
+```
+
 
 
 
