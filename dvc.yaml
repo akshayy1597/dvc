@@ -1,0 +1,14 @@
+stages:
+  stage_1:
+    cmd: python stage_1.py
+    deps:                              # list of dependencies
+      - stage_1.py
+    outs:                              # list of outputs
+      - artifact.txt
+
+
+  stage_2:
+    cmd: python stage_2.py
+    deps:
+      - artifact.txt
+      - stage_2.py
