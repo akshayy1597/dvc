@@ -72,6 +72,16 @@ cd dvc
 code .
 ```
 
+11. Whatever things will be written in the stage_1 and 2 will be locked in the dvc.lock file:
+```
+dvc repro
+```
+
+12. Will show you all the dependancies:
+```
+Dvc dag
+```
+
 
 
 
